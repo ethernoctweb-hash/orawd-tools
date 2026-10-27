@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090704">
+  <title>ORAKASINO — Pengajuan WD 100%</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="luxury-backdrop" aria-hidden="true">
+    <div class="gold-orbit orbit-one"></div>
+    <div class="gold-orbit orbit-two"></div>
+    <div class="gold-glow glow-one"></div>
+    <div class="gold-glow glow-two"></div>
+    <div class="background-wordmark"></div>
+    <div class="background-tagline">PLAY · WIN · REWARD</div>
+  </div>  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-emblem" aria-hidden="true">
+        <img src="assets/logo-bulat.png" alt="">
+        <span>O</span>
+      </div>
+      <div class="topbar-copy">
+        <span class="eyebrow">MEMBER SERVICE</span>
+        <h1>ORAKASINO</h1>
+        <p>TOOLS PENGAJUAN WD</p>
+      </div>
+      <span class="status-pill"><i></i> READY</span>
+    </header><section class="panel">
+  <div class="panel-heading">
+    <span class="overline"><span class="overline-line"></span> FORMULIR PENGAJUAN</span>
+    <h2>Daftarkan Nomor WhatsApp</h2>
+    <p>Masukkan nomor WhatsApp pelanggan untuk menampilkan konfirmasi pengajuan.</p>
+  </div>
+
+  <form id="wdForm" novalidate>
+    <label for="phone">NOMOR WHATSAPP PELANGGAN</label>
+    <div class="phone-field">
+      <span class="country-code">+62</span>
+      <input id="phone" name="phone" type="tel" inputmode="tel"
+             autocomplete="tel-national" placeholder="81234567890"
+             maxlength="18" aria-describedby="phoneHint" required>
+    </div>
+    <p class="hint" id="phoneHint">Masukkan nomor aktif tanpa kode +62 atau angka 0 di depan.</p>
+    <p class="error" id="errorMessage" role="alert" hidden>Masukkan nomor WhatsApp yang valid terlebih dahulu.</p>
+    <button class="submit-button" id="submitButton" type="submit">
+      <span class="button-label">AJUKAN WD 100%</span>
+      <span class="button-spinner" aria-hidden="true"></span>
+      <svg class="button-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M7 5h12v12"/></svg>
+    </button>
+  </form>
+  <div class="panel-foot"><span class="mini-shield">✓</span> Pastikan nomor pelanggan sudah benar sebelum diajukan.</div>
+</section>
+
+<footer><span class="footer-rule"></span><span>ORAKASINO</span><b>•</b><span>PLAY · WIN · REWARD</span><span class="footer-rule"></span></footer>
+
+  </main>  <div class="modal-backdrop" id="successModal" hidden>
+    <div class="modal-haze" aria-hidden="true"></div>
+    <section class="success-card" role="dialog" aria-modal="true" aria-labelledby="successTitle" aria-describedby="successDescription">
+      <button class="close-button" type="button" id="closeModal" aria-label="Tutup">×</button>
+      <div class="modal-topline"><span></span> STATUS PENGAJUAN <span></span></div>
+      <img class="logo" src="assets/orakasino-logo.jpg" alt="Logo ORAKASINO">
+      <div class="success-icon" aria-hidden="true">
+        <svg viewBox="0 0 72 60" class="double-check">
+          <defs>
+            <linearGradient id="checkGold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#211600"/>
+              <stop offset="48%" stop-color="#4c3507"/>
+              <stop offset="100%" stop-color="#171006"/>
+            </linearGradient>
+          </defs>
+          <path class="check-shadow" d="M7 31.5 21 45 47 17"/>
+          <path class="check-shadow second" d="M27 31.5 41 45 67 17"/>
+          <path class="check-stroke" d="M7 29.5 21 43 47 15"/>
+          <path class="check-stroke second" d="M27 29.5 41 43 67 15"/>
+          <path class="check-glint" d="M8 29.5 21 42.5 46 15.5"/>
+        </svg>
+      </div>
+      <h2 id="successTitle">Pengajuan WD 100% Berhasil!</h2>
+      <div class="gold-divider"><span></span></div>
+      <p class="number-label">NOMOR WHATSAPP TERDAFTAR</p>
+      <p class="customer-number" id="displayPhone">081234567890</p>
+      <p class="success-description" id="successDescription">Nomor WhatsApp berhasil didaftarkan untuk proses penerimaan WD 100%. Silakan tunggu konfirmasi selanjutnya.</p>
+      <button class="confirm-button" type="button" id="confirmButton">MENGERTI <span>↗</span></button>
+      <p class="modal-signature">ORAKASINO <i>—</i> PLAY · WIN · REWARD</p>
+    </section>
+  </div>  <script src="script.js"></script></body>
+</html>
